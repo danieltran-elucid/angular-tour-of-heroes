@@ -1,0 +1,10 @@
+<!-- The double curly braces are Angular's interpolation binding syntax. This interpolation binding presents the component's title property value inside the HTML header tag. -->
+<h1>{{title}}</h1>
+<!-- tells the router where to display routed views. -->
+<nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <!-- The routerLink is the selector for the RouterLink directive that turns user clicks into router navigations.  -->
+    <a routerLink="/heroes">Heroes</a>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>

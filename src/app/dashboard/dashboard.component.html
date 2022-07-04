@@ -1,0 +1,13 @@
+<!-- The template presents a grid of hero name links. -->
+
+<h2>Top Heroes</h2>
+<div class="heroes-menu">
+    <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+    <!-- The *ngFor repeater creates as many links as are in the component's heroes array.
+        The links are styled as colored blocks by the dashboard.component.css. -->
+        <!-- You're using Angular interpolation binding within the *ngFor repeater to insert the current iteration's hero.id into each routerLink. -->
+        {{hero.name}}
+    </a>
+</div>
+
+<app-hero-search></app-hero-search>
